@@ -53,6 +53,7 @@ blis @ file:///home/conda/feedstock_root/build_artifacts/cython-blis_17296638294
 boltons @ file:///home/conda/feedstock_root/build_artifacts/boltons_1733827268945/work
 boto3 @ file:///home/conda/feedstock_root/build_artifacts/boto3_1737565849136/work
 botocore @ file:///home/conda/feedstock_root/build_artifacts/botocore_1737535602177/work
+branca==0.8.1
 Brotli @ file:///home/conda/feedstock_root/build_artifacts/brotli-split_1725267488082/work
 cached-property @ file:///home/conda/feedstock_root/build_artifacts/cached_property_1615209429212/work
 cachetools @ file:///home/conda/feedstock_root/build_artifacts/cachetools_1737517575301/work
@@ -118,7 +119,9 @@ fastprogress @ file:///home/conda/feedstock_root/build_artifacts/fastprogress_17
 filelock @ file:///home/conda/feedstock_root/build_artifacts/filelock_1737517818712/work
 flake8 @ file:///home/conda/feedstock_root/build_artifacts/flake8_1733246708104/work
 Flask @ file:///home/conda/feedstock_root/build_artifacts/flask_1731556349671/work
+flask-cors==5.0.1
 flatbuffers @ file:///home/conda/feedstock_root/build_artifacts/python-flatbuffers_1737806625658/work
+folium==0.19.4
 fonttools @ file:///home/conda/feedstock_root/build_artifacts/fonttools_1738940303262/work
 fqdn @ file:///home/conda/feedstock_root/build_artifacts/fqdn_1733327382592/work/dist
 frozendict @ file:///home/conda/feedstock_root/build_artifacts/frozendict_1728841334936/work
@@ -328,6 +331,7 @@ PyHive @ file:///home/conda/feedstock_root/build_artifacts/pyhive_1735921503606/
 PyJWT @ file:///home/conda/feedstock_root/build_artifacts/pyjwt_1732782409051/work
 pylint @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pylint_1738072071/work
 PyNaCl @ file:///home/conda/feedstock_root/build_artifacts/pynacl_1725739262442/work
+pyngrok==7.2.3
 pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1733777368795/work
 pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1735698276679/work
 PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1733217236728/work
@@ -478,6 +482,7 @@ window_ops @ file:///home/conda/feedstock_root/build_artifacts/window-ops_173314
 wrapt @ file:///home/conda/feedstock_root/build_artifacts/wrapt_1736869461581/work
 xgboost @ file:///home/conda/feedstock_root/build_artifacts/xgboost-split_1738880198843/work/python-package
 xxhash @ file:///home/conda/feedstock_root/build_artifacts/python-xxhash_1725272033556/work
+xyzservices==2025.1.0
 y-py @ file:///home/conda/feedstock_root/build_artifacts/y-py_1725865678684/work
 yapf @ file:///home/conda/feedstock_root/build_artifacts/yapf_1736192735449/work
 yarl @ file:///home/conda/feedstock_root/build_artifacts/yarl_1737575777699/work

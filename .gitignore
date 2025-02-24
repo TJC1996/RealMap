@@ -1,2 +1,15 @@
 notebooks/.ipynb_checkpoints/
 .DS_Store
+.env
+.env
+.env
+app.log
+model.tar.gz
+preprocessor.joblib
+deployed_endpoint.txt
+xgboost-model.deprecated
+ngrok-stable-linux-amd64.zip.1
+ngrok-v3-stable-linux-amd64.tgz
+__pycache__/
+.ipynb_checkpoints/
+archive/

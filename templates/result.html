@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    {% if prediction.error %}
+        <p>Error: {{ prediction.error }}</p>
+    {% else %}
+        <p>The predicted sale price is: ${{ prediction }}</p>
+    {% endif %}
+    <a href="/">Back</a>
+</body>
+</html>
