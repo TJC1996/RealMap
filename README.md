@@ -9,6 +9,7 @@ This project aims to predict **commercial property sale prices** in Monmouth Cou
 The deployed model can be accessed via a live demo using **Ngrok**. Users can either interact through a **web-based form** or send a **JSON request** using `cURL`.
 
 ### 🌐 **Web UI for Predictions**
+#### **User Inputs in Web Form:**
 The interactive web interface allows users to enter property details and obtain a **predicted sale price**.
 
 <img width="838" alt="Screenshot 2025-02-24 at 7 43 48 PM" src="https://github.com/user-attachments/assets/4c953b53-1983-4322-9e6b-1a2d05a3b74f" />
@@ -27,7 +28,6 @@ The interactive web interface allows users to enter property details and obtain 
 ### 🖼 **Example Prediction and Map Visualization**
 Once a user enters property details, the predicted price is displayed. Below is an example:
 
-#### **User Inputs in Web Form:**
 #### **Predicted Price Output:**
 <img width="303" alt="Screenshot 2025-02-24 at 7 44 00 PM" src="https://github.com/user-attachments/assets/6d725aba-05b2-479e-ab19-511adda52760" />
 
