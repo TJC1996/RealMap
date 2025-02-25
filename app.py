@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, render_template, jsonify
 from flask_cors import CORS
 import boto3
 import json
@@ -74,12 +74,16 @@ def preprocess_input(data):
         logging.error(f"Error in preprocessing input: {e}")
         raise ValueError(f"Error in preprocessing input: {e}")
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        data = request.get_json()
+        data = request.form  # Use request.form for form submissions
         if not data:
-            return jsonify({"error": "No input data provided"}), 400
+            return render_template("result.html", prediction={"error": "No input data provided"})
 
         features = preprocess_input(data)
         csv_input = ",".join(map(str, features))
@@ -93,15 +97,11 @@ def predict():
         raw_prediction = json.loads(response['Body'].read().decode())
         predicted_sale_price = np.expm1(raw_prediction[0]) if isinstance(raw_prediction, list) else np.expm1(raw_prediction)
 
-        return jsonify({"predicted_sale_price": predicted_sale_price})
-    
+        return render_template("result.html", prediction=round(predicted_sale_price, 2))
+
     except Exception as e:
         logging.error(f"Error: {e}")
-        return jsonify({"error": str(e)}), 500
-
-@app.route('/')
-def index():
-    return render_template('index.html')
+        return render_template("result.html", prediction={"error": str(e)})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

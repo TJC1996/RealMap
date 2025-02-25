@@ -7,10 +7,11 @@
 <body>
     <h1>Prediction Result</h1>
     {% if prediction.error %}
-        <p>Error: {{ prediction.error }}</p>
+        <p style="color: red;">Error: {{ prediction.error }}</p>
     {% else %}
-        <p>The predicted sale price is: ${{ prediction }}</p>
+        <p>The predicted sale price is: <strong>${{ prediction }}</strong></p>
     {% endif %}
-    <a href="/">Back</a>
+    <br>
+    <a href="/">Back to Home</a>
 </body>
 </html>
