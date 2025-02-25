@@ -21,7 +21,7 @@ The interactive web interface allows users to enter property details and obtain 
 3. The API processes the input, sends it to SageMaker, and returns a prediction.
 
 🔗 **Live Demo URL:**  
-https://7358-52-4-240-77.ngrok-free.app/
+https://7ac5-52-4-240-77.ngrok-free.app/
 ---
 
 ### 🖼 **Example Prediction and Map Visualization**
@@ -55,4 +55,5 @@ Users can also send property data via **cURL** to obtain a prediction.
 ```sh
 curl -X POST "https://7358-52-4-240-77.ngrok-free.app/predict" \
   -H "Content-Type: application/json" \
-  -d '{"sq_ft": 2000, "acreage": 0.5, "yr_built": 1990, "sale_date": "2024-01-01", "latitude": 40.2, "longitude": -74.0, "total_assmnt": 500000, "taxes_1": 12000, "municipality": "Town A", "property_class": "Class B", "type_use": "Retail", "neigh": "Downtown"}'
+  -d '{"sq_ft": 2200, "acreage": 0.35, "yr_built": 1995, "sale_date": "2024-02-15", "latitude": 40.7500, "longitude": -73.9900, "total_assmnt": 450000, "taxes_1": 8500, "municipality": "MapleTown", "property_class": "Commercial", "type_use": "Retail", "neigh": "Uptown"}'
+
