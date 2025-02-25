@@ -53,6 +53,6 @@ The application also includes a **map visualization** that displays historical p
 Users can also send property data via **cURL** to obtain a prediction.
 
 ```sh
-curl -X POST "https://10e5-52-4-240-77.ngrok-free.app/predict" \
+curl -X POST "https://7358-52-4-240-77.ngrok-free.app/predict" \
   -H "Content-Type: application/json" \
   -d '{"sq_ft": 2000, "acreage": 0.5, "yr_built": 1990, "sale_date": "2024-01-01", "latitude": 40.2, "longitude": -74.0, "total_assmnt": 500000, "taxes_1": 12000, "municipality": "Town A", "property_class": "Class B", "type_use": "Retail", "neigh": "Downtown"}'
