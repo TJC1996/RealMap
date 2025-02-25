@@ -21,7 +21,7 @@ The interactive web interface allows users to enter property details and obtain 
 3. The API processes the input, sends it to SageMaker, and returns a prediction.
 
 🔗 **Live Demo URL:**  
-https://414a-52-4-240-77.ngrok-free.app/
+https://7358-52-4-240-77.ngrok-free.app/
 ---
 
 ### 🖼 **Example Prediction and Map Visualization**
